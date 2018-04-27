@@ -1,20 +1,26 @@
 package PTest;
+/*
+	(int)(Math.random() * (큰수 - 작은수 + 1) + 작은수);	 ==> 큰수~작은수 중 랜덤으로 숫자 출력
+	Math.round ==> 소숫점 첫째 자리에서 반올림
+*/
 
-import java.util.Scanner;
-public class Test{
+public class Math_method{
 	public static void main(String[] args) {
-		int i = 4;
-		double d = 4.0;
-		String s = "HackerRank ";
-		Scanner scan = new Scanner(System.in);
+		int[][] arr=new int[3][3];
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr.length;j++) {
+				arr[i][j]=(int)(Math.random() * (100 - 10 + 1) + 1);
+			}
+		}
+
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr.length;j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
 		
-		int a=scan.nextInt()+4;
-		System.out.println(a);
 		
-		double b=scan.nextDouble()+4.0;
-		System.out.println(b);
-		
-		String c=scan.next()+"is the best place to learn and practice coding!";
-		System.out.println(c);
 	}
 }

@@ -1,4 +1,6 @@
 package PTest;
+// 팩토리얼을 구하는 함수
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -9,6 +11,7 @@ import java.util.regex.*;
     	int factorial=1;
     	for(int i=n;i>0;i--) {
     		factorial=i*factorial;
+//    		팩토리얼 함수     
       	}
     	return factorial;
     }
