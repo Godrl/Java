@@ -1,4 +1,4 @@
-package PTest;
+package PHacker_rank;
 import java.util.HashMap;
 import java.util.Scanner;
 public class HashMapMethod {

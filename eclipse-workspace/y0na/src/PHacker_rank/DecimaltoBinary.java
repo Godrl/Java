@@ -1,4 +1,4 @@
-package PTest;
+package PHacker_rank;
 //	십진법을 이진법으로 전환
 
 //	and 이진법중 1이 연속된 숫자 (최대)
