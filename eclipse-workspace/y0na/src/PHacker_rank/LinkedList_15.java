@@ -13,16 +13,15 @@ class Node {
 
 public class LinkedList_15 {
 	public static Node insert(Node head,int data) {
-		if(head == null)
-	        return new Node( data);
+		if(head == null) {
+	        return new Node(data);
+		}
 	    else if(head.next == null){
-	            head.next = new Node(data);
-	        }
-	    else{
-	        insert(head.next,data);
+	    	head.next = new Node(data);
 	    }
-
-
+	    else{
+	    	insert(head.next,data);
+	    }
 	        return head;
 
     }
