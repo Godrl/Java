@@ -9,7 +9,7 @@ public class MoreExceptions_17 {
         while (t-- > 0) {
 		        int n = in.nextInt();
 		        int p = in.nextInt();
-		        Calculator myCalculator = new Calculator();
+		       squareCalculator myCalculator = new squareCalculator();
 		        try {
 		        	int ans = myCalculator.power(n, p);
 		        	System.out.println(ans);
@@ -22,11 +22,7 @@ public class MoreExceptions_17 {
 	}
 }
 	
-class Calculator{
-	Calculator(){
-		
-	}
-	 
+class squareCalculator{
 	int power(int a, int b) throws Exception{
 		if(a >= 0 && b >= 0) {
 			return (int)Math.pow(a, b);

@@ -3,17 +3,13 @@ package PTest;
 public class Test07 {
 	public static void main(String args[]){
 		int a=5;
-		Node node=new Node(a);
+		if(true) {
+			a = a+6;
+			System.out.println(a);
+		}
+		System.out.println(a);
 		 
 
 	}
 }
 
-class Node {
-	int data;
-	Node next;
-	Node(int d) {
-        data = d;
-        next = null;
-    }
-}
